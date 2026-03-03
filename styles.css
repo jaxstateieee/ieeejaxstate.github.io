@@ -946,7 +946,9 @@ footer a:hover {
   font-size: 0.92rem;
 }
 
-/* ── Officers Section (Flip Cards) ─────────────────────────── */
+/* ────────────────────────────────────────────────
+  Officers Section (Flip Cards) 
+───────────────────────────────────────────────── */
 .officers { background: var(--surface); }
 
 .officers__grid {
@@ -997,7 +999,7 @@ footer a:hover {
 
 .officer-card__position-bar {
   background: var(--jsu-maroon);
-  color: var(--jsu-white);
+  color: var(--text-light);
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.1em;
@@ -1217,7 +1219,7 @@ footer a:hover {
 ───────────────────────────────────────────────── */
 
 .timeline-section {
-  background: #111;
+  background: var(--bg-primary);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
 }
@@ -1225,9 +1227,9 @@ footer a:hover {
 .timeline-heading {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: #ffffff;
+  color: #000000;
   margin-bottom: var(--space-xl);
-  font-style: italic;
+  font-weight: bold;
 }
 
 .timeline {
@@ -1246,7 +1248,7 @@ footer a:hover {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, var(--jsu-maroon), var(--jsu-gold), var(--ieee-blue));
+  background: var(--jsu-maroon);;
   border-radius: 2px;
 }
 
@@ -1277,7 +1279,7 @@ footer a:hover {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--jsu-gold);
+  color: #000000;
   margin-bottom: 0.25rem;
 }
 
@@ -1310,7 +1312,7 @@ footer a:hover {
 
 .gallery-section {
   padding: var(--space-xl) var(--space-lg);
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
   text-align: center;
 }
 
