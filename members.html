@@ -20,55 +20,61 @@
   <div class="menu-toggle"><i class="fas fa-bars"></i></div>
 
   <div class="nav-links">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="events.html">Events</a>
-    <a href="members.html">Join</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+    <a href="about.html" data-i18n="nav.about">About</a>
+    <a href="events.html" data-i18n="nav.events">Events</a>
+    <a href="members.html" data-i18n="nav.join">Join</a>
+    <a href="contact.html" data-i18n="nav.contact">Contact</a>
   </div>
+
+  <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+    <span class="lang-option active" data-lang="en">EN</span>
+    <span class="lang-divider">/</span>
+    <span class="lang-option" data-lang="es">ES</span>
+  </button>
 </div>
 </nav>
 
 <section class="page-header">
   <div class="hero-content">
-    <h1>Join IEEE JSU</h1>
-    <p class="subtitle">Be part of the largest technical professional organization in the world — on campus.</p>
+    <h1 data-i18n="members.title">Join IEEE JSU</h1>
+    <p class="subtitle" data-i18n="members.subtitle">Be part of the largest technical professional organization in the world — on campus.</p>
   </div>
 </section>
 
 <main style="padding: var(--space-xl) var(--space-lg); max-width:1200px; margin:0 auto;">
 
   <section style="margin-bottom: var(--space-xl);">
-    <h2 style="text-align:center; margin-bottom:var(--space-lg);">Why Join IEEE?</h2>
+    <h2 style="text-align:center; margin-bottom:var(--space-lg);" data-i18n="members.why">Why Join IEEE?</h2>
     
     <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:var(--space-lg);">
       <div style="background:var(--surface); padding:var(--space-lg); border-radius:var(--radius-lg); text-align:center;">
         <i class="fas fa-network-wired fa-3x" style="color:var(--jsu-gold); margin-bottom:1rem;"></i>
-        <h3>Networking</h3>
-        <p>Meet industry professionals, alumni, professors and fellow students.</p>
+        <h3 data-i18n="members.networking">Networking</h3>
+        <p data-i18n="members.networkingText">Meet industry professionals, alumni, professors and fellow students.</p>
       </div>
       <div style="background:var(--surface); padding:var(--space-lg); border-radius:var(--radius-lg); text-align:center;">
         <i class="fas fa-project-diagram fa-3x" style="color:var(--jsu-gold); margin-bottom:1rem;"></i>
-        <h3>Projects & Competitions</h3>
-        <p>Work on real hardware/software projects and compete regionally/nationally.</p>
+        <h3 data-i18n="members.projects">Projects & Competitions</h3>
+        <p data-i18n="members.projectsText">Work on real hardware/software projects and compete regionally/nationally.</p>
       </div>
       <div style="background:var(--surface); padding:var(--space-lg); border-radius:var(--radius-lg); text-align:center;">
         <i class="fas fa-graduation-cap fa-3x" style="color:var(--jsu-gold); margin-bottom:1rem;"></i>
-        <h3>Career Boost</h3>
-        <p>IEEE membership looks excellent on resumes and LinkedIn.</p>
+        <h3 data-i18n="members.career">Career Boost</h3>
+        <p data-i18n="members.careerText">IEEE membership looks excellent on resumes and LinkedIn.</p>
       </div>
     </div>
   </section>
 
   <section style="text-align:center; margin: var(--space-xl) 0;">
-    <h2>How to Join</h2>
+    <h2 data-i18n="members.how">How to Join</h2>
     <ol style="max-width:700px; margin: var(--space-lg) auto; text-align:left; font-size:1.15rem; line-height:2;">
       <li>Go to <a href="https://www.ieee.org/membership/join/index.html" target="_blank" style="color:var(--jsu-gold);">ieee.org/membership</a></li>
       <li>Select <strong>Student Membership</strong> (~$32/year)</li>
       <li>Choose <strong>Jacksonville State University</strong> as your school</li>
       <li>Join the <strong>IEEE JSU Student Branch</strong> during registration or email us afterward</li>
     </ol>
-    <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn btn-primary" style="font-size:1.4rem; padding:1.2rem 3rem; margin-top:2rem;">
+    <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="btn btn-primary" style="font-size:1.4rem; padding:1.2rem 3rem; margin-top:2rem;" data-i18n="members.joinBtn">
       Join IEEE Now
     </a>
   </section>
@@ -79,29 +85,29 @@
  <footer>
   <div class="footer-grid">
     <div>
-      <h3>IEEE JSU Student Branch</h3>
-      <p>Advancing technology for humanity — right here in Jacksonville, Alabama.</p>
+      <h3 data-i18n="footer.branch">IEEE JSU Student Branch</h3>
+      <p data-i18n="footer.tagline">Advancing technology for humanity — right here in Jacksonville, Alabama.</p>
     </div>
 
     <div>
-      <h3>Quick Links</h3>
+      <h3 data-i18n="footer.links">Quick Links</h3>
       <ul style="list-style:none; padding:0;">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="events.html">Events & Workshops</a></li>
-        <li><a href="members.html">Join IEEE</a></li>
-        <li><a href="contact.html">Contact Officers</a></li>
+        <li><a href="about.html" data-i18n="footer.about">About Us</a></li>
+        <li><a href="events.html" data-i18n="footer.events">Events & Workshops</a></li>
+        <li><a href="members.html" data-i18n="footer.join">Join IEEE</a></li>
+        <li><a href="contact.html" data-i18n="footer.contact">Contact Officers</a></li>
       </ul>
     </div>
 
     <div>
-      <h3>Contact</h3>
-      <p><strong>Faculty Advisor:</strong> Dr. A.K. Ghosh – akghosh@jsu.edu</p>
-      <p><strong>Webmaster:</strong> pbasyal@stu.jsu.edu</p>
-      <p><strong>Last updated:</strong> March 2, 2026</p>
+      <h3 data-i18n="footer.contactTitle">Contact</h3>
+      <p><strong data-i18n="footer.advisor">Faculty Advisor:</strong> Dr. A.K. Ghosh – akghosh@jsu.edu</p>
+      <p><strong data-i18n="footer.webmaster">Webmaster:</strong> pbasyal@stu.jsu.edu</p>
+      <p><strong data-i18n="footer.updated">Last updated:</strong> March 2, 2026</p>
     </div>
   </div>
 
-  <div class="last-updated">
+  <div class="last-updated" data-i18n="footer.copyright">
     © 2026 IEEE Jacksonville State University Student Branch
   </div>
 </footer>

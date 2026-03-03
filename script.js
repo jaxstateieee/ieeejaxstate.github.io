@@ -1,4 +1,232 @@
 
+/* ─────────────────────────────────────────────
+   i18n – English / Spanish translation system
+────────────────────────────────────────────── */
+
+const translations = {
+  en: {
+    // Navbar
+    'nav.home':     'Home',
+    'nav.about':    'About',
+    'nav.events':   'Events',
+    'nav.join':     'Join',
+    'nav.contact':  'Contact',
+
+    // Index – Hero
+    'hero.title':    'IEEE<br>Jacksonville State<br>University',
+    'hero.subtitle': 'Gamecock Engineers – Building the future, one circuit at a time.',
+    'hero.join':     'Join IEEE JSU',
+    'hero.events':   'Upcoming Events',
+
+    // Index – Stats
+    'stats.members':  'Active Members',
+    'stats.events':   'Events Hosted',
+    'stats.officers': 'Officer Team',
+    'stats.projects': 'Projects Completed',
+
+    // Index – Calendar
+    'calendar.heading': 'Stay Up-to-Date with the upcoming events',
+    'calendar.live':    'Live Calendar',
+    'calendar.public':  'Calendar is public — no login required',
+
+    // Index – CTA
+    'cta.heading': 'Ready to power up your future?',
+    'cta.button':  'Become a Member Today',
+
+    // About
+    'about.title':       'About Us',
+    'about.subtitle':    'Who we are • What we do • Why it matters',
+    'about.mission':     'Our Mission',
+    'about.missionText': 'The IEEE JSU Student Branch exists to inspire, connect, and empower the next generation of engineers and technologists. Through hands-on projects, professional development, networking events, and community outreach we help members grow both technically and professionally.',
+    'about.teamLabel':   'Our Team',
+    'about.officers':    'Officers',
+
+    // Events
+    'events.title':    'Events & Workshops',
+    'events.subtitle': 'Where ideas become reality — join us!',
+    'events.upcoming': 'Upcoming Events',
+    'events.past':     'Past Highlights',
+
+    // Members
+    'members.title':          'Join IEEE JSU',
+    'members.subtitle':       'Be part of the largest technical professional organization in the world — on campus.',
+    'members.why':            'Why Join IEEE?',
+    'members.networking':     'Networking',
+    'members.networkingText': 'Meet industry professionals, alumni, professors and fellow students.',
+    'members.projects':       'Projects & Competitions',
+    'members.projectsText':   'Work on real hardware/software projects and compete regionally/nationally.',
+    'members.career':         'Career Boost',
+    'members.careerText':     'IEEE membership looks excellent on resumes and LinkedIn.',
+    'members.how':            'How to Join',
+    'members.joinBtn':        'Join IEEE Now',
+
+    // Contact
+    'contact.title':          'Get in Touch',
+    'contact.subtitle':       "Questions? Ideas? Just want to say hi? We're listening.",
+    'contact.reach':          'Reach Us',
+    'contact.advisorTitle':   'Faculty Advisor',
+    'contact.presidentTitle': 'President',
+    'contact.webmasterTitle': 'Webmaster',
+    'contact.social':         'Social & Platforms',
+    'contact.send':           'Send Message',
+    'contact.sendBtn':        'Send Message',
+    'contact.namePh':         'Your Name',
+    'contact.emailPh':        'Your Email',
+    'contact.subjectPh':      'Subject',
+    'contact.messagePh':      'Your message...',
+
+    // Footer (shared)
+    'footer.branch':       'IEEE JSU Student Branch',
+    'footer.tagline':      'Advancing technology for humanity — right here in Jacksonville, Alabama.',
+    'footer.links':        'Quick Links',
+    'footer.about':        'About Us',
+    'footer.events':       'Events & Workshops',
+    'footer.join':         'Join IEEE',
+    'footer.contact':      'Contact Officers',
+    'footer.contactTitle': 'Contact',
+    'footer.advisor':      'Faculty Advisor:',
+    'footer.webmaster':    'Webmaster:',
+    'footer.updated':      'Last updated:',
+    'footer.copyright':    '© 2026 IEEE Jacksonville State University Student Branch',
+  },
+
+  es: {
+    // Navbar
+    'nav.home':     'Inicio',
+    'nav.about':    'Acerca',
+    'nav.events':   'Eventos',
+    'nav.join':     'Únete',
+    'nav.contact':  'Contacto',
+
+    // Index – Hero
+    'hero.title':    'IEEE<br>Jacksonville State<br>University',
+    'hero.subtitle': 'Ingenieros Gamecock – Construyendo el futuro, un circuito a la vez.',
+    'hero.join':     'Únete a IEEE JSU',
+    'hero.events':   'Próximos Eventos',
+
+    // Index – Stats
+    'stats.members':  'Miembros Activos',
+    'stats.events':   'Eventos Realizados',
+    'stats.officers': 'Equipo Directivo',
+    'stats.projects': 'Proyectos Completados',
+
+    // Index – Calendar
+    'calendar.heading': 'Mantente al día con los próximos eventos',
+    'calendar.live':    'Calendario en Vivo',
+    'calendar.public':  'El calendario es público — no requiere inicio de sesión',
+
+    // Index – CTA
+    'cta.heading': '¿Listo para impulsar tu futuro?',
+    'cta.button':  'Hazte Miembro Hoy',
+
+    // About
+    'about.title':       'Sobre Nosotros',
+    'about.subtitle':    'Quiénes somos • Qué hacemos • Por qué importa',
+    'about.mission':     'Nuestra Misión',
+    'about.missionText': 'La Rama Estudiantil IEEE JSU existe para inspirar, conectar y empoderar a la próxima generación de ingenieros y tecnólogos. A través de proyectos prácticos, desarrollo profesional, eventos de networking y servicio comunitario, ayudamos a los miembros a crecer tanto técnica como profesionalmente.',
+    'about.teamLabel':   'Nuestro Equipo',
+    'about.officers':    'Oficiales',
+
+    // Events
+    'events.title':    'Eventos y Talleres',
+    'events.subtitle': 'Donde las ideas se hacen realidad — ¡únete!',
+    'events.upcoming': 'Próximos Eventos',
+    'events.past':     'Eventos Pasados Destacados',
+
+    // Members
+    'members.title':          'Únete a IEEE JSU',
+    'members.subtitle':       'Sé parte de la organización profesional técnica más grande del mundo — en tu campus.',
+    'members.why':            '¿Por qué unirse a IEEE?',
+    'members.networking':     'Networking',
+    'members.networkingText': 'Conoce profesionales de la industria, exalumnos, profesores y compañeros.',
+    'members.projects':       'Proyectos y Competencias',
+    'members.projectsText':   'Trabaja en proyectos reales de hardware/software y compite a nivel regional/nacional.',
+    'members.career':         'Impulso Profesional',
+    'members.careerText':     'La membresía IEEE luce excelente en currículums y LinkedIn.',
+    'members.how':            'Cómo Unirse',
+    'members.joinBtn':        'Únete a IEEE Ahora',
+
+    // Contact
+    'contact.title':          'Contáctanos',
+    'contact.subtitle':       '¿Preguntas? ¿Ideas? ¿Solo quieres saludar? Te escuchamos.',
+    'contact.reach':          'Encuéntranos',
+    'contact.advisorTitle':   'Asesor de Facultad',
+    'contact.presidentTitle': 'Presidente',
+    'contact.webmasterTitle': 'Administrador Web',
+    'contact.social':         'Redes Sociales',
+    'contact.send':           'Enviar Mensaje',
+    'contact.sendBtn':        'Enviar Mensaje',
+    'contact.namePh':         'Tu Nombre',
+    'contact.emailPh':        'Tu Correo Electrónico',
+    'contact.subjectPh':      'Asunto',
+    'contact.messagePh':      'Tu mensaje...',
+
+    // Footer (shared)
+    'footer.branch':       'Rama Estudiantil IEEE JSU',
+    'footer.tagline':      'Avanzando la tecnología para la humanidad — aquí en Jacksonville, Alabama.',
+    'footer.links':        'Enlaces Rápidos',
+    'footer.about':        'Sobre Nosotros',
+    'footer.events':       'Eventos y Talleres',
+    'footer.join':         'Únete a IEEE',
+    'footer.contact':      'Contactar Oficiales',
+    'footer.contactTitle': 'Contacto',
+    'footer.advisor':      'Asesor de Facultad:',
+    'footer.webmaster':    'Administrador Web:',
+    'footer.updated':      'Última actualización:',
+    'footer.copyright':    '© 2026 IEEE Rama Estudiantil Universidad Estatal de Jacksonville',
+  }
+};
+
+// Announcement texts in both languages
+const announcementTexts = {
+  en: [
+    "SoutheastCon 2026 – April 10–13, Gainesville, FL → Register now!",
+    "Weekly Tech Workshops every Thursday 6PM – Ayers Hall 201",
+    "IEEE Project Competition submissions due March 15th"
+  ],
+  es: [
+    "SoutheastCon 2026 – 10 al 13 de abril, Gainesville, FL → ¡Regístrate ahora!",
+    "Talleres de Tecnología todos los jueves 6PM – Ayers Hall 201",
+    "Entregas de la Competencia de Proyectos IEEE hasta el 15 de marzo"
+  ]
+};
+
+function setLanguage(lang) {
+  // Update all elements with data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+
+  // Update placeholders (data-i18n-placeholder)
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang] && translations[lang][key]) {
+      el.placeholder = translations[lang][key];
+    }
+  });
+
+  // Update announcement banner rotating text
+  const textEl = document.querySelector('.rotating-text');
+  if (textEl && announcementTexts[lang]) {
+    textEl.dataset.texts = JSON.stringify(announcementTexts[lang]);
+    textEl.textContent = announcementTexts[lang][0];
+  }
+
+  // Update <html lang>
+  document.documentElement.lang = lang;
+
+  // Update toggle button active state
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.classList.toggle('active', opt.getAttribute('data-lang') === lang);
+  });
+
+  // Persist choice
+  localStorage.setItem('ieeejsu-lang', lang);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // Navbar scroll effect
@@ -67,6 +295,22 @@ if (banner) {
     banner.classList.add('hidden');
   }
 }
+
+  // ─── Language toggle ──────────────────────────
+  const langToggle = document.getElementById('lang-toggle');
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const current = localStorage.getItem('ieeejsu-lang') || 'en';
+      const next = current === 'en' ? 'es' : 'en';
+      setLanguage(next);
+    });
+  }
+
+  // Restore saved language (default: English)
+  const savedLang = localStorage.getItem('ieeejsu-lang') || 'en';
+  if (savedLang !== 'en') {
+    setLanguage(savedLang);
+  }
 
 });
 

@@ -510,3 +510,64 @@ footer a:hover {
   .hero h1 { font-size: 4.2rem; }
   .nav-container { padding: var(--space-sm); }
 }
+
+/* ────────────────────────────────────────────────
+   Language Toggle
+───────────────────────────────────────────────── */
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  background: var(--bg-raised);
+  border: 2px solid var(--jsu-maroon);
+  border-radius: 50px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all var(--transition);
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.lang-toggle:hover {
+  background: var(--jsu-maroon);
+}
+
+.lang-toggle:hover .lang-option,
+.lang-toggle:hover .lang-divider {
+  color: white;
+}
+
+.lang-option {
+  color: var(--text-muted);
+  transition: color var(--transition);
+  padding: 0.1rem 0.25rem;
+  border-radius: 3px;
+}
+
+.lang-option.active {
+  color: var(--jsu-maroon);
+  font-weight: 700;
+}
+
+.lang-toggle:hover .lang-option.active {
+  color: var(--jsu-gold);
+}
+
+.lang-divider {
+  color: var(--text-muted);
+  font-weight: 400;
+  user-select: none;
+}
+
+@media (max-width: 992px) {
+  .lang-toggle {
+    position: absolute;
+    right: 3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

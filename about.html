@@ -20,28 +20,34 @@
     <div class="menu-toggle"><i class="fas fa-bars"></i></div>
 
     <div class="nav-links">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="events.html">Events</a>
-      <a href="members.html">Join</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="events.html" data-i18n="nav.events">Events</a>
+      <a href="members.html" data-i18n="nav.join">Join</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
     </div>
+
+    <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">
+      <span class="lang-option active" data-lang="en">EN</span>
+      <span class="lang-divider">/</span>
+      <span class="lang-option" data-lang="es">ES</span>
+    </button>
   </div>
 </nav>
 
 <!-- Page header -->
 <section class="page-header">
   <div class="hero-content">
-    <h1>About Us</h1>
-    <p class="subtitle">Who we are • What we do • Why it matters</p>
+    <h1 data-i18n="about.title">About Us</h1>
+    <p class="subtitle" data-i18n="about.subtitle">Who we are • What we do • Why it matters</p>
   </div>
 </section>
 
 <main style="padding: var(--space-xl) var(--space-lg); max-width:1400px; margin:0 auto;">
 
   <section style="margin-bottom: var(--space-xl);">
-    <h2 style="font-size:2.8rem; text-align:center; margin-bottom:var(--space-lg);">Our Mission</h2>
-    <p style="font-size:1.25rem; max-width:900px; margin:0 auto; text-align:center;">
+    <h2 style="font-size:2.8rem; text-align:center; margin-bottom:var(--space-lg);" data-i18n="about.mission">Our Mission</h2>
+    <p style="font-size:1.25rem; max-width:900px; margin:0 auto; text-align:center;" data-i18n="about.missionText">
       The IEEE JSU Student Branch exists to inspire, connect, and empower the next generation of engineers and technologists.
       Through hands-on projects, professional development, networking events, and community outreach we help members grow both technically and professionally.
     </p>
@@ -51,8 +57,8 @@
 <section id="officers" class="officers">
       <div class="container">
         <div class="section-header fade-up">
-          <span class="section-label">Our Team</span>
-          <h2 class="section-title">Officers</h2>
+          <span class="section-label" data-i18n="about.teamLabel">Our Team</span>
+          <h2 class="section-title" data-i18n="about.officers">Officers</h2>
         </div>
         <div class="officers__grid">
 
@@ -228,29 +234,29 @@
  <footer>
   <div class="footer-grid">
     <div>
-      <h3>IEEE JSU Student Branch</h3>
-      <p>Advancing technology for humanity — right here in Jacksonville, Alabama.</p>
+      <h3 data-i18n="footer.branch">IEEE JSU Student Branch</h3>
+      <p data-i18n="footer.tagline">Advancing technology for humanity — right here in Jacksonville, Alabama.</p>
     </div>
 
     <div>
-      <h3>Quick Links</h3>
+      <h3 data-i18n="footer.links">Quick Links</h3>
       <ul style="list-style:none; padding:0;">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="events.html">Events & Workshops</a></li>
-        <li><a href="members.html">Join IEEE</a></li>
-        <li><a href="contact.html">Contact Officers</a></li>
+        <li><a href="about.html" data-i18n="footer.about">About Us</a></li>
+        <li><a href="events.html" data-i18n="footer.events">Events & Workshops</a></li>
+        <li><a href="members.html" data-i18n="footer.join">Join IEEE</a></li>
+        <li><a href="contact.html" data-i18n="footer.contact">Contact Officers</a></li>
       </ul>
     </div>
 
     <div>
-      <h3>Contact</h3>
-      <p><strong>Faculty Advisor:</strong> Dr. A.K. Ghosh – akghosh@jsu.edu</p>
-      <p><strong>Webmaster:</strong> pbasyal@stu.jsu.edu</p>
-      <p><strong>Last updated:</strong> March 2, 2026</p>
+      <h3 data-i18n="footer.contactTitle">Contact</h3>
+      <p><strong data-i18n="footer.advisor">Faculty Advisor:</strong> Dr. A.K. Ghosh – akghosh@jsu.edu</p>
+      <p><strong data-i18n="footer.webmaster">Webmaster:</strong> pbasyal@stu.jsu.edu</p>
+      <p><strong data-i18n="footer.updated">Last updated:</strong> March 2, 2026</p>
     </div>
   </div>
 
-  <div class="last-updated">
+  <div class="last-updated" data-i18n="footer.copyright">
     © 2026 IEEE Jacksonville State University Student Branch
   </div>
 </footer>
