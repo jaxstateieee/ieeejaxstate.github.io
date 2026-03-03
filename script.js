@@ -38,6 +38,10 @@ const translations = {
     'about.subtitle':    'Who we are • What we do • Why it matters',
     'about.mission':     'Our Mission',
     'about.missionText': 'The IEEE JSU Student Branch exists to inspire, connect, and empower the next generation of engineers and technologists. Through hands-on projects, professional development, networking events, and community outreach we help members grow both technically and professionally.',
+    'about.whoLabel':    'WHO WE ARE',
+    'about.whoHeading':  'About IEEE JSU',
+    'about.whoPara1':    'The IEEE Student Branch at Jacksonville State University connects students with the world\u2019s largest technical professional organization. We bridge classroom theory and real-world engineering through hands-on projects, workshops, and competitions.',
+    'about.whoPara2':    'Our branch is part of IEEE Region 3 (Southeastern US) and sends teams to SoutheastCon annually. We focus on embedded systems, robotics, PCB design, and software development \u2014 giving members practical skills that employers value.',
     'about.teamLabel':   'Our Team',
     'about.officers':    'Officers',
 
@@ -124,6 +128,10 @@ const translations = {
     'about.subtitle':    'Quiénes somos • Qué hacemos • Por qué importa',
     'about.mission':     'Nuestra Misión',
     'about.missionText': 'La Rama Estudiantil IEEE JSU existe para inspirar, conectar y empoderar a la próxima generación de ingenieros y tecnólogos. A través de proyectos prácticos, desarrollo profesional, eventos de networking y servicio comunitario, ayudamos a los miembros a crecer tanto técnica como profesionalmente.',
+    'about.whoLabel':    'QUIÉNES SOMOS',
+    'about.whoHeading':  'Sobre IEEE JSU',
+    'about.whoPara1':    'La Rama Estudiantil de IEEE en la Universidad Estatal de Jacksonville conecta a los estudiantes con la organización profesional técnica más grande del mundo. Unimos la teoría del aula con la ingeniería del mundo real a través de proyectos prácticos, talleres y competencias.',
+    'about.whoPara2':    'Nuestra rama es parte de la Región 3 de IEEE (sureste de EE.UU.) y envía equipos a SoutheastCon anualmente. Nos enfocamos en sistemas embebidos, robótica, diseño de PCB y desarrollo de software — brindando a los miembros habilidades prácticas que los empleadores valoran.',
     'about.teamLabel':   'Nuestro Equipo',
     'about.officers':    'Oficiales',
 
