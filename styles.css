@@ -215,6 +215,55 @@ body {
 
 .announcement-banner.hidden { display: none; }
 
+
+/* ────────────────────────────────────────────────
+   Page Specific Hero images
+───────────────────────────────────────────────── */
+
+/* Page-specific hero/page-header backgrounds */
+
+/* Home (index.html) – big group/energy image */
+.hero::after {
+  background: url("/assets/hero-images/Home_Hero_Image.webp") center / cover no-repeat !important;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+/* About Us – team/lab photo */
+body:has(.about-main) .page-header::after {
+  background: url("/assets/Homepage_AboutUs.webp") center / cover no-repeat !important;
+  opacity: 0.9;   /* slightly lower opacity for text readability */
+  z-index: 0;
+}
+
+/* Events – action/workshop shot */
+body:has(.ev-section) .page-header::after {
+  background: url("/assets/hero-images/Events_Hero_Image.webp") center / cover no-repeat !important;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+/* Members/Join – students collaborating */
+body:has(.members-main) .page-header::after {
+  background: url("/assets/hero-images/JoinP_Hero_Image.webp") center / cover no-repeat !important;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+/* Contact – calm campus/engineering building */
+body:has(.contact-main) .page-header::after {
+  background: url("/assets/contact-campus-building.webp") center / cover no-repeat !important;
+  opacity: 0.35;
+  z-index: 0;
+}
+
+/* Fallback if body class missing (very safe) */
+.page-header::after:not(:has(body:has(.hero))) {
+  background: none !important;
+  opacity: 0 !important;
+}
+
+
 /* ────────────────────────────────────────────────
    Hero / Page Header
 ───────────────────────────────────────────────── */
@@ -248,9 +297,7 @@ body {
 .page-header::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: url("/assets/jsu-computer-science-students-win-awards-at-confer_198loHt.webp") center / cover no-repeat;
-  opacity: 0.9;                       /* was 0.7 → lowered for text legibility */
+  inset: 0;  opacity: 0.9;                       /* was 0.7 → lowered for text legibility */
   z-index: 0;
 }
 
