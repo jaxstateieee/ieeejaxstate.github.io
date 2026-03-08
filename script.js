@@ -359,9 +359,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
-      navbar.classList.remove('scrolled');
-    } else {
       navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
     }
   });
 
@@ -461,7 +461,9 @@ if (stats.length && statsSection) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         stats.forEach(el => {
-          const target = parseInt(el.getAttribute('data-target'));
+          const targetStr = el.getAttribute('data-target');
+          const target = parseInt(targetStr);
+          const suffix = targetStr.replace(/[0-9]/g, ''); // Extract non-numeric chars like "+"
           const duration = 2000; // 2 seconds
           const startTime = performance.now();
 
@@ -470,11 +472,11 @@ if (stats.length && statsSection) {
             const progress = Math.min(elapsed / duration, 1);
             // Quadratic ease-out: 1 - (1 - t)^2
             const eased = 1 - Math.pow(1 - progress, 2);
-            el.textContent = Math.floor(eased * target);
+            el.textContent = Math.floor(eased * target) + suffix;
             if (progress < 1) {
               requestAnimationFrame(update);
             } else {
-              el.textContent = target;
+              el.textContent = target + suffix;
             }
           };
 
@@ -605,24 +607,34 @@ if (hamburger && navLinksForHamburger) {
   });
 }
 
-// --- Officer card flip on scroll (mobile) / touch (desktop fallback) ---
-const isMobile = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+// --- Officer card flip behavior ---
+const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
 if (isMobile) {
+  // Mobile: Start flipped (show details), flip to front when centered, then stay
   const officerCards = document.querySelectorAll('.officer-card');
+  
+  // Initially flip all cards to show details
+  officerCards.forEach(card => card.classList.add('flipped'));
+  
   if (officerCards.length) {
     const flipObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
-          entry.target.classList.add('flipped');
-        } else {
+        // When card is in the middle ~50% of viewport, show front (picture) and stop observing
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
           entry.target.classList.remove('flipped');
+          flipObserver.unobserve(entry.target); // Don't flip back once revealed
         }
       });
-    }, { threshold: [0, 0.6] });
+    }, { 
+      threshold: [0, 0.3, 0.5, 0.7, 1.0],
+      rootMargin: '-20% 0px -20% 0px' // Middle 60% of viewport
+    });
+    
     officerCards.forEach(card => flipObserver.observe(card));
   }
 } else {
-  // Desktop: toggle on click for accessibility
+  // Desktop: Click to flip
   document.querySelectorAll('.officer-card').forEach(card => {
     card.addEventListener('click', () => {
       card.classList.toggle('flipped');
