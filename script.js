@@ -641,3 +641,26 @@ if (isMobile) {
     });
   });
 }
+
+// What we build video play/pause behavior
+document.addEventListener('DOMContentLoaded', () => {
+  const playBtn = document.getElementById('play-video-btn');
+  const video = document.getElementById('branch-robot-video');
+  const posterImg = document.querySelector('.video-wrapper img');
+
+  if (playBtn && video && posterImg) {
+    playBtn.addEventListener('click', () => {
+      playBtn.style.display = 'none';  
+      posterImg.style.display = 'none'; 
+      video.style.display = 'block';
+      video.play().catch(e => console.log("Video play failed:", e));
+    });
+
+    video.addEventListener('ended', () => {
+      playBtn.style.display = 'block';
+      posterImg.style.display = 'block';
+      video.style.display = 'none';         
+      video.currentTime = 0;       
+    });
+  }
+});
