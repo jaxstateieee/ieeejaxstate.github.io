@@ -11,6 +11,12 @@ const translations = {
     'nav.events':   'Events',
     'nav.join':     'Join',
     'nav.contact':  'Contact',
+  // Gallery Captions
+  'gallery.caption1': 'SoutheastCon 2025 IEEE JaxState Team',
+  'gallery.caption2': 'Dr. Ghosh and his students judging Robotics Competition',
+  'gallery.caption3': 'ICPC Southeast USA Division 2 Competition',
+  'gallery.caption4': 'SoutheastCon 2024 IEEE JaxState Team',
+  'gallery.caption5': 'IEEE JaxState Community Outreach Program',
 
     // Index – Hero
     'hero.title':    'IEEE<br>Jacksonville State<br>University',
@@ -155,6 +161,21 @@ const translations = {
     'footer.webmaster':    'Webmaster:',
     'footer.updated':      'Last updated:',
     'footer.copyright':    '© 2026 IEEE Jacksonville State University Student Branch',
+  },
+  es: {
+    // Navbar
+    'nav.home':     'Inicio',
+    'nav.about':    'Acerca de',
+    'nav.events':   'Eventos',
+    'nav.join':     'Unirse',
+    'nav.contact':  'Contacto',
+    // Gallery Captions
+    'gallery.caption1': 'Equipo IEEE JaxState en SoutheastCon 2025',
+    'gallery.caption2': 'Dr. Ghosh y sus estudiantes juzgando la Competencia de Robótica',
+    'gallery.caption3': 'Competencia ICPC División 2 Sureste de EE.UU.',
+    'gallery.caption4': 'Equipo IEEE JaxState en SoutheastCon 2024',
+    'gallery.caption5': 'Programa de Extensión Comunitaria IEEE JaxState',
+    // ...existing code...
   },
 
   es: {
